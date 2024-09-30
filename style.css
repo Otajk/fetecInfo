@@ -1,0 +1,1164 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    transition: all 1s;
+    scrollbar-width: 10px;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+header{
+    height: 10vh;
+    background-color: #f58a19;
+    position: sticky;
+    top: 0px;
+    z-index: 123;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    
+}
+ 
+#link{
+   
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 300px;
+    align-items: center;
+    font-family: 'Geomanist';
+    padding: 5px;
+    
+    
+    
+
+}
+
+.links > a{
+    color: white;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+
+    
+    
+    
+}
+.links > a:hover{
+    color: #2491ff;
+    transition: all 0.5s;
+
+  
+    
+}
+.links > a::before{
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    height: 2.5px;
+    margin: auto;
+    width: 0px;
+    transition: all 0.2s;
+    background-color: white;
+
+
+}
+.links > a:hover::before{
+    width: 60px;
+    transition: all 0.2s;
+}
+header > h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    position: static;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    
+    justify-content: center;
+    align-items: center;
+}
+header > h3:hover{
+    font-size: 45px;
+   
+   
+    cursor: pointer;
+    
+}
+header > h3 > a{
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s;
+}
+header > h3 > a:hover{
+    color: #2491ff;
+    transition: all 0.3s;
+}
+a{
+    text-decoration: none;
+    
+    
+   
+    
+    
+}
+#banner{
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+#banner > video {
+    width: 100%;
+    position: relative;
+    bottom: 160px;
+    user-select: none;
+    filter: brightness(40%);
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -moz-user-modify: none;
+    -moz-user-focus: none;
+    -webkit-user-select: none;
+   
+
+  
+}
+
+#banner > div > h1{
+    text-align: center;
+    font-family: 'Simplifica';
+
+  
+    font-size: 70px;
+    letter-spacing: 8px;
+  
+    color: rgb(255, 255, 255);
+   
+
+   
+  
+}
+#banner div, #banner video{
+    position: absolute;
+}
+
+#banner > div > h1 > b{
+    font-family: 'scratch';
+    font-size: 120px;
+    font-weight: 900;
+
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff6600;
+  
+}
+.botoestitulo{
+  width: 190px;
+  border: solid 3px white;
+  height: 40px;
+
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Geomanist';
+  transition: all 200ms;
+
+} 
+.botoestitulo:hover{
+    background-color: white;
+    color: #0a0908;
+    transition: all 200ms;
+}
+.vermais{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+#conteudo{
+    padding: 50px;
+    background-color: #e5e5e5;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 13vh;
+    align-items: center;
+
+
+
+}
+#sobrescratch{
+ font-size: 30px;
+ 
+ height: 30vh;
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+grid-template-rows: repeat(5, 1fr);
+
+
+
+}
+#sobrescratch > a > img{
+    width: 320px;
+    border-radius: 20px;
+    grid-row: 1 / 5;
+    grid-column: 5 / 6;
+    transition: all 400ms;
+    box-shadow: 5px 0px 5px 1px gray;
+}
+#sobrescratch > a > img:hover{
+    width: 350px;
+    transition: all 400ms;
+    box-shadow: 0px 0px 10px 5px gray;
+
+}
+#sobrescratch img{
+    position: absolute;
+}
+#sobrescratch > a {
+    grid-row: 1 / 5;
+    grid-column: 5 / 6;
+}
+#sobrescratch > h2{
+    font-size: 40px;
+    font-family: 'Geomanist';
+    color: #0a0908;
+    grid-row: 1 / 1;
+    grid-column: 1 / 3;
+
+}
+#sobrescratch > p{
+    grid-row: 2 / 5;
+    font-size: 20px;
+    font-family: 'Arial';
+   
+    grid-column: 1 / 4;
+}
+#sobrescratch > h2 > span{
+    font-family: 'scratch';
+    font-size: 45px;
+    -webkit-text-stroke-width: 1px;
+    color: white;
+    -webkit-text-stroke-color: #ff6600;
+}
+#jogos{
+    width: 100%;
+    text-align: center;
+    background-color: #3a86ff;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-items: center;
+    align-content: center;
+    padding: 30px;
+    gap: 50px;
+    position: relative;
+   
+    
+    
+
+}
+#jogos > h1{
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    z-index: 0;
+    color: white;
+    font-size: 100px;
+    letter-spacing: 5px;
+    font-family: 'Geomanist';
+    position: relative;
+    top: 100px;
+
+}
+.games{
+    background-color: #fff;
+    height: 500px;
+    border-radius: 30px;
+    width: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.5s;
+    user-select: none;
+
+    
+
+}
+.games:hover{
+    height: 505px;
+    width: 410px;
+    box-shadow: 0px 0px 15px 1px #0055aa;
+    transition: all 0.5s;
+    cursor: pointer;
+    user-select: none;
+    
+    
+    
+}
+.games > img{
+    width: 300px;
+    border-radius: 10px;
+}
+.games > h3{
+    font-size: 35px;
+    font-family: 'Retro';
+}
+.botao{
+    width: 80%;
+    height: 50px;
+    background-color: #8338ec;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'SIMPLIFICA';
+    font-weight: bold;
+    letter-spacing: 3px;
+    transition: all 0.3s;
+    gap: 15px;
+    
+}
+.botao:hover{
+    background-color: #41009b;
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+    
+
+}
+@keyframes animacao {
+    0%{transform: rotate(0deg);}
+    50%{
+            transform: rotate(720deg);
+            transition: all ease-in-out;
+    height: 35px;
+    width: 35px;
+        }
+    100%{transform: rotate(360deg);
+        height: 30px;
+        width: 30px;}    
+       
+
+
+}
+
+.botao:hover svg{
+    animation-name: animacao;
+    animation-duration: 2.5s;
+    
+}
+.games > p{
+    font-size: 20px;
+    font-family: 'Geomanist';
+    color: gray;
+}
+footer{
+    height: 20vh;
+    display: flex;
+    justify-content: ;
+    flex-direction: column;
+    align-items: center;
+    background-color: #8338ec;
+
+}
+footer > h1{
+    font-size: 50px;
+    font-family: 'arial';
+    color: white;
+    
+}
+footer > p {
+    font-family: 'Geomanist';
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Retro';
+    src: url(assets/fonts/Retro\ Gaming.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+    
+}
+@font-face {
+    font-family: 'Geomanist';
+    src: url(assets/fonts/Geomanist-Regular.otf);
+
+}
+@font-face {
+    font-family: 'Simplifica';
+    src: url(assets/fonts/SIMPLIFICA\ Typeface.ttf);
+}
+@font-face {
+    font-family: 'scratch';
+    src: url(assets/fonts/Scratch_.ttf);
+}
+
+
+@media (max-width: 1440px){
+    .links > a::before{
+        content: '';
+        position: absolute;
+        bottom: 30px;
+        height: 2px;
+        margin: auto;
+        width: 0px;
+        transition: all 0.2s;
+    
+    }
+    .games > img{
+        width: 200px;
+        border-radius: 10px;
+    }
+    .games:hover{
+        height: 410px;
+        width: 310px;
+        transition: all 0.5s;
+        cursor: pointer;
+        user-select: none;
+        
+        
+        
+    }
+
+    
+    #jogos{
+      
+        display: grid;
+        text-align: center;
+        padding: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        
+    
+        padding: 20px;
+        gap: 30px;
+        
+        
+    
+    }
+    .games{
+
+        width: 300px;
+        height: 400px;
+    
+    
+        
+    
+    }
+    #jogos > h1{
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    #banner > video {
+        width: 100%;
+        height: 300%;
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+    #banner{
+        height: 42vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+ 
+}
+}
+@media (max-width: 1370px) {
+    
+}
+@media (max-width: 1300px){
+    #jogos{
+        width: 100%;
+ 
+        display: grid;
+        text-align: center;
+        padding: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    
+        padding: 20px;
+        gap: 30px;
+        
+        
+    
+    }
+    #jogos > h1{
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+     
+        font-size: 60px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+}
+@media (max-width: 1175px){
+    #sobrescratch{
+        font-size: 30px;
+        height: 40vh;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       position: relative;
+       padding: 30px;
+       text-align: center;
+       
+       
+       
+       }
+       #conteudo{
+        padding: 50px;
+   
+        width: 100%;
+        display: flex;
+        align-items: normal;
+        height: 100vh;
+        position: relative;
+        top: 0vh;
+    
+    
+    
+    }
+    #sobrescratch > a > img{
+        width: 320px;
+        border-radius: 20px;
+        transition: all 400ms;
+     
+        margin-top: 30px;
+    }
+    #sobrescratch > a > img:hover{
+        width: 350px;
+        transition: all 400ms;
+       
+    
+    }
+    #sobrescratch img{
+        position: static;
+    }
+
+    #sobrescratch > h2{
+        font-size: 40px;
+        font-family: 'Geomanist';
+
+      
+    
+    }
+    #sobrescratch > p{
+      
+        font-size: 20px;
+        font-family: 'Arial';
+       
+        grid-column: 1 / 4;
+    }
+    #sobrescratch > h2 > span{
+        font-family: 'scratch';
+        font-size: 45px;
+        -webkit-text-stroke-width: 1px;
+        
+        -webkit-text-stroke-color: #ff6600;
+    }
+    #banner > video {
+        width: 100%;
+        height: 300%;
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+    #banner{
+        height: 42vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    #banner > div > h1{
+        text-align: center;
+        font-family: 'Simplifica';
+    
+      
+        font-size: 50px;
+        letter-spacing: 8px;
+      
+
+       
+    
+       
+      
+    }
+    
+    #banner > div > h1 > b{
+        font-family: 'scratch';
+        font-size: 90px;
+        font-weight: 900;
+    
+
+      
+    }
+    .links > a::before{
+        content: '';
+        position: absolute;
+        bottom: 50px;
+        height: 2.5px;
+        margin: auto;
+        width: 0px;
+        transition: all 0.2s;
+        background-color: white;
+    
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px){
+    #sobrescratch > a > img{
+        width: 250px;
+        border-radius: 20px;
+        transition: all 400ms;
+     
+        margin-top: 30px;
+    }
+    #sobrescratch > a > img:hover{
+        width: 260px;
+        transition: all 400ms;
+        box-shadow: 0px 0px 10px 5px gray;
+    
+    }
+    header{
+        height: 20vh;
+
+        position: sticky;
+        top: 0px;
+        z-index: 123;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+     
+    }
+    #conteudo{
+        padding: 50px;
+     
+        display: flex;
+        width: 100%;
+        height: 130vh;
+        position: relative;
+        top: 0vh;
+        flex-direction: column;
+        
+    
+    
+    
+    }
+    #banner{
+        height: 60vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .links > a::before{
+        content: '';
+        position: absolute;
+        bottom: 70px;
+       
+       
+        width: 0px;
+        transition: all 0.2s;
+  
+    
+    }
+}
+@media (max-width: 730px) {
+    #banner > video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+    #banner{
+        height: 52.5vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+}
+@media (max-width: 670px) {
+    #banner > video {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+    #banner{
+        height: 49vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    .games{
+       
+        width: 240px;
+        height: 340px;
+        padding: 10px;
+    
+        
+    
+    }
+    .games:hover{
+        width: 245px;
+        height: 345px;
+    }
+    .botao{
+        width: 70%;
+        height: 30px;
+    
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+ 
+        font-size: 20px;
+        font-family: 'SIMPLIFICA';
+        font-weight: bold;
+        letter-spacing: 3px;
+        transition: all 0.3s;
+        gap: 15px;
+        
+    }
+    @keyframes animacao {
+        0%{transform: rotate(0deg);}
+        50%{
+                transform: rotate(720deg);
+                transition: all ease-in-out;
+        height: 31px;
+        width: 31px;
+            }
+        100%{transform: rotate(360deg);
+            height: 30px;
+            width: 30px;}    
+           
+    
+    
+    }
+    .games > p{
+        font-size: 15px;
+        font-family: 'Geomanist';
+        
+    }
+    .games > h3{
+        font-size: 25px;
+        font-family: 'Retro';
+    }
+}
+@media (max-width: 550px) {
+    #banner > video {
+        width: 100%;
+
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+    #banner{
+        height: 42vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    #banner > div > h1{
+        text-align: center;
+        font-family: 'Simplifica';
+    
+      
+        font-size: 50px;
+        letter-spacing: 8px;
+      
+
+       
+    
+       
+      
+    }
+    
+    #banner > div > h1 > b{
+        font-family: 'scratch';
+        font-size: 90px;
+        font-weight: 900;
+    
+
+      
+    }
+    .botoestitulo{
+      width: 170px;
+ 
+      height: 40px;
+    
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-family: 'Geomanist';
+      transition: all 200ms;
+    
+    } 
+    .botoestitulo:hover{
+  
+
+        transition: all 200ms;
+    }
+}
+@media (max-width: 527px) {
+    #jogos{
+        width: 100%;
+        text-align: center;
+        background-color: #3a86ff;
+        display: grid;
+    
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        justify-items: center;
+        align-content: center;
+        padding: 30px;
+        gap: 50px;
+        position: relative;
+       
+        
+        
+    
+    }
+    #banner > video {
+        width: 100%;
+        height: ;
+        position: relative;
+        bottom: normal;
+       
+      
+    }
+    #banner{
+        height: 20vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    #banner > div > h1{
+        text-align: center;
+        font-family: 'Simplifica';
+    
+      
+        font-size: 40px;
+        letter-spacing: 8px;
+      
+
+       
+    
+       
+      
+    }
+    
+    #banner > div > h1 > b{
+        font-family: 'scratch';
+        font-size: 80px;
+        font-weight: 900;
+    
+
+      
+    }
+    #jogos > h1{
+        grid-column: 1 / 1;
+        grid-row: 1 / 2;
+        font-size: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    #conteudo{
+        padding: 50px;
+   
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        top: 0vh;
+    
+    
+    
+    }
+}
+
+
+@media (max-width: 420px) {
+    header{
+        height: 15vh;
+        background-color: #f58a19;
+        position: sticky;
+        
+        top: 0px;
+        z-index: 123;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        
+    }
+    .links > a::before{
+        content: '';
+        position: static;
+        bottom: 0;
+        height: 0;
+        margin: 0;
+        width: 0px;
+        transition: 0 0;
+      
+    
+    
+    }
+    #banner > video {
+        width: 100%;
+        height: 200%;
+        position: relative;
+        bottom: 0px;
+       
+      
+    }
+
+    #banner{
+        height: 20vh;
+        width: 100%;
+        overflow: hidden;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+        
+        
+    }
+    #banner > div > h1{
+        text-align: center;
+        font-family: 'Simplifica';
+    
+      
+        font-size: 30px;
+        letter-spacing: 8px;
+      
+
+       
+    
+       
+      
+    }
+    
+    #banner > div > h1 > b{
+        font-family: 'scratch';
+        font-size: 60px;
+        font-weight: 900;
+    
+
+      
+    }
+    #conteudo{
+        padding: 50px;
+   
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: normal;
+        height: 100vh;
+        position: relative;
+        top: -20px;
+    
+    
+    
+    }
+    #jogos > h1{
+     
+     
+        font-size: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+}
+@media (min-height: 1170px),(max-width: 500px)
+{
+    #sobrescratch{
+        font-size: 30px;
+        height: 90%;
+       display: flex;
+       overflow-y: scroll;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-around;
+       position: relative;
+       padding: 30px;
+       text-align: center;
+       
+       
+       
+       }
+       #conteudo{
+        top: 20px;
+       }
+       .botoestitulo{
+        width: 100px;
+        border: solid 3px white;
+        height: 30px;
+        position: relative;
+        top: -10px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: 'Geomanist';
+        transition: all 200ms;
+      
+      } 
+      #banner > video {
+        width: 100%;
+        height: 500%;
+        position: relative;
+        top: 0px;
+       
+      
+    }
+    #banner{
+        position: relative;
+        height: 100%;
+    }
+    }
